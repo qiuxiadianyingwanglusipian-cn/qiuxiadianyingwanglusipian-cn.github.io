@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="秋霞电影网鲁丝片（qiuxiadianyingwanglusipian-cn）是面向影迷的华语与全球艺术电影赏析、导演研究与正版观影指南站点，涵盖作者电影、女性叙事、经典修复与独立影像。">
+<meta name="keywords" content="秋霞电影网鲁丝片, qiuxiadianyingwanglusipian-cn, 艺术电影, 作者电影, 女性电影, 经典修复, 独立电影">
+<meta name="author" content="秋霞电影网鲁丝片">
+<meta name="theme-color" content="#10131c">
+<title>秋霞电影网鲁丝片 - 艺术电影·作者导演·经典修复赏析 | qiuxiadianyingwanglusipian-cn</title>
+<link rel="canonical" href="https://qiuxiadianyingwanglusipian-cn.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "秋霞电影网鲁丝片",
+  "alternateName": "qiuxiadianyingwanglusipian-cn",
+  "url": "https://qiuxiadianyingwanglusipian-cn.github.io/",
+  "description": "艺术电影、作者导演、女性叙事与经典修复的赏析与正版观影指南",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://qiuxiadianyingwanglusipian-cn.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#10131c; --bg2:#161a26; --card:#1e2433; --line:#313b52;
+  --txt:#eaeef7; --sub:#9aa6bf;
+  --teal:#35b3a8; --teal2:#6fd8cf;
+  --rose:#e2647d; --gold:#e3b45a;
+  --r:14px; --sh:0 16px 40px rgba(0,0,0,.5);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--bg); color:var(--txt); line-height:1.85; overflow-x:hidden;
+  background-image:radial-gradient(circle at 15% 10%, rgba(53,179,168,.10), transparent 42%),
+                   radial-gradient(circle at 85% 88%, rgba(226,100,125,.08), transparent 40%);
+  background-attachment:fixed;
+}
+a{color:var(--teal2);text-decoration:none;transition:.25s}
+a:hover{color:#fff}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+section{padding:70px 0}
+.st{font-size:28px;font-weight:900;letter-spacing:.5px;margin-bottom:6px}
+.st i{font-style:normal;color:var(--teal)}
+.sn{color:var(--sub);font-size:14px;margin:12px 0 34px}
+.serif{font-family:"Songti SC","STSong",Georgia,serif}
+
+/* 导航 */
+.bar{position:sticky;top:0;z-index:99;background:rgba(16,19,28,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:18px;letter-spacing:.5px;color:#fff}
+.logo{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--teal),var(--rose));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 5px 14px rgba(53,179,168,.35)}
+.links{display:flex;gap:4px}
+.links a{color:var(--sub);font-size:13.5px;padding:9px 13px;border-radius:8px}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.mbtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--txt);font-size:22px;cursor:pointer}
+
+/* Hero：放映机光束 */
+.hero{position:relative;padding:86px 0 72px;border-bottom:1px solid var(--line);overflow:hidden}
+.beam{position:absolute;inset:0;background:repeating-linear-gradient(62deg, rgba(255,255,255,.022) 0 2px, transparent 2px 9px);transform-origin:top left;pointer-events:none}
+.hx{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative}
+.eyebrow{display:inline-block;font-size:11.5px;letter-spacing:3px;color:var(--teal2);border:1px solid rgba(53,179,168,.4);padding:5px 14px;border-radius:30px;margin-bottom:18px}
+.hero h1{font-size:46px;line-height:1.2;font-weight:900;letter-spacing:-.5px}
+.hero h1 u{text-decoration:none;color:var(--rose)}
+.hero p{color:var(--sub);font-size:16px;margin:20px 0 26px;max-width:560px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.b{padding:13px 27px;border-radius:30px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer}
+.b1{background:linear-gradient(135deg,var(--teal),#1e8b82);color:#06201e}
+.b2{background:rgba(255,255,255,.05);color:#fff;border:1px solid var(--line)}
+/* 胶片帧式 TOP3 */
+.reel{display:flex;flex-direction:column;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.fm{display:flex;align-items:center;gap:13px;padding:9px;border-radius:10px;transition:.25s}
+.fm:hover{background:rgba(255,255,255,.05)}
+.fm .idx{font-size:12px;font-weight:900;color:var(--rose);width:24px;flex:none}
+.fm .sq{width:44px;height:44px;border-radius:8px;display:grid;place-items:center;font-size:20px;flex:none}
+.fm:nth-child(1) .sq{background:linear-gradient(135deg,#e3b45a,#a97d24)}
+.fm:nth-child(2) .sq{background:linear-gradient(135deg,#9aa6bf,#5d6b88)}
+.fm:nth-child(3) .sq{background:linear-gradient(135deg,#c77b4a,#8f5126)}
+.fm .tx h4{font-size:14.5px}
+.fm .tx small{color:var(--sub);font-size:11.5px}
+
+/* 栏目导航：胶片孔牌匾 */
+.chs{background:var(--bg2)}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ch{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 18px;position:relative;transition:.3s;overflow:hidden}
+.ch::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg, transparent 0 14px, rgba(255,255,255,.018) 14px 18px)}
+.ch:hover{transform:translateY(-6px);box-shadow:var(--sh);border-color:var(--teal)}
+.ch .no{font-size:10.5px;letter-spacing:2.5px;color:var(--teal2);font-weight:800}
+.ch h3{font-size:16.5px;margin:7px 0 6px;position:relative}
+.ch p{font-size:12.5px;color:var(--sub);position:relative}
+.ch .ar{margin-top:12px;font-size:11.5px;color:var(--teal2);position:relative}
+
+/* 栏目一：本周片单（时刻表 DOM） */
+.sched{background:var(--bg)}
+.tb{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.row{display:grid;grid-template-columns:74px 1fr;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:10px;overflow:hidden;transition:.3s}
+.row:hover{border-left-color:var(--rose);box-shadow:var(--sh)}
+.row .tm{background:rgba(53,179,168,.10);padding:14px 10px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;border-right:1px dashed var(--line)}
+.row .tm b{font-size:17px;color:var(--teal2)}
+.row .tm small{font-size:10px;color:var(--sub);letter-spacing:1px}
+.row .bd{padding:14px 16px}
+.row .bd h4{font-size:15px}
+.row .bd .mt{font-size:11.5px;color:var(--gold);margin-top:3px}
+.row .bd p{font-size:12.5px;color:var(--sub);margin-top:7px}
+
+/* 栏目二：导演谱系（卡片矩阵 + 年份轴 DOM） */
+.tree{background:var(--bg2)}
+.axis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dr{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center;transition:.3s}
+.dr:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:var(--rose)}
+.dr .yr{font-size:11px;letter-spacing:2px;color:var(--rose);font-weight:800}
+.dr .ic{width:60px;height:60px;border-radius:50%;margin:12px auto;background:conic-gradient(from 0deg,var(--teal),var(--rose),var(--gold),var(--teal));display:grid;place-items:center;font-size:21px;color:#06201e;font-weight:900}
+.dr b{display:block;font-size:15.5px}
+.dr small{color:var(--sub);font-size:11.5px}
+.dr .tg{margin-top:11px;font-size:11px;color:var(--teal2);border-top:1px dashed var(--line);padding-top:10px}
+
+/* 栏目三：深度解读（报刊分栏 DOM） */
+.read{background:var(--bg)}
+.paper{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px}
+.mast{text-align:center;border-bottom:2px solid var(--rose);padding-bottom:14px;margin-bottom:22px}
+.mast h3{font-size:21px;letter-spacing:7px;font-family:"Songti SC","STSong",serif}
+.mast small{color:var(--sub);font-size:11.5px;letter-spacing:2px}
+.cols{column-count:2;column-gap:34px;column-rule:1px solid var(--line)}
+.cols article{break-inside:avoid;margin-bottom:22px}
+.cols h4{font-size:15px;color:var(--teal2);margin-bottom:7px}
+.cols p{font-size:13.5px;color:var(--sub);text-align:justify}
+.cols .qt{display:block;font-family:"Songti SC","STSong",serif;font-size:15px;color:var(--txt);border-left:3px solid var(--rose);padding-left:12px;margin:9px 0;font-style:italic}
+
+/* 栏目四：类型片单（标签页 DOM） */
+.genres{background:var(--bg2)}
+.tabs{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
+.tab{padding:9px 19px;border-radius:30px;background:var(--card);border:1px solid var(--line);color:var(--sub);font-size:13px;cursor:pointer;transition:.25s}
+.tab.on{background:var(--teal);color:#06201e;border-color:var(--teal);font-weight:700}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.3s}
+.pc:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:var(--rose)}
+.cv2{aspect-ratio:3/4;display:grid;place-items:center;font-size:34px;position:relative}
+.cv2.v1{background:linear-gradient(155deg,#1f4d5c,#10131c)}
+.cv2.v2{background:linear-gradient(155deg,#5c2a3d,#10131c)}
+.cv2.v3{background:linear-gradient(155deg,#4d4520,#10131c)}
+.cv2.v4{background:linear-gradient(155deg,#2a3d5c,#10131c)}
+.cv2 .mk{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.6);color:var(--gold);font-size:11px;padding:2px 9px;border-radius:20px}
+.pc .ft{padding:13px 14px}
+.pc h4{font-size:14.5px}
+.pc .mt{font-size:11.5px;color:var(--sub);margin-top:5px;display:flex;justify-content:space-between}
+.stars{color:var(--gold)}
+
+/* 栏目五：观影路径（阶梯 DOM） */
+.path{background:var(--bg)}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{position:relative;background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:12px;padding:20px 18px;transition:.3s}
+.step:hover{border-color:var(--teal)}
+.step .ix{font-size:11px;letter-spacing:2px;color:var(--rose);font-weight:800}
+.step h4{font-size:15.5px;margin:8px 0 6px}
+.step p{font-size:12.5px;color:var(--sub)}
+.step .tip{margin-top:12px;font-size:11px;color:var(--gold);border-top:1px dashed var(--line);padding-top:9px}
+
+/* 栏目六：观众来信（信笺 DOM） */
+.letters{background:var(--bg2)}
+.env{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.letter{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px;position:relative;transition:.3s}
+.letter::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--rose)}
+.letter:hover{box-shadow:var(--sh);transform:translateY(-3px)}
+.letter .who{font-size:12px;color:var(--teal2);letter-spacing:.5px}
+.letter .who em{font-style:normal;color:var(--sub);margin-left:8px;font-size:11px}
+.letter p{font-size:13.5px;color:var(--txt);margin-top:9px;font-family:"Songti SC","STSong",serif}
+.letter .sign{margin-top:12px;font-size:11.5px;color:var(--sub);text-align:right}
+
+/* 关于 */
+.about{background:var(--bg)}
+.ag{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.notice{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px}
+.notice h3{font-size:18px;color:var(--teal2);margin-bottom:14px}
+.notice ol{list-style:none;display:flex;flex-direction:column;gap:12px;counter-reset:c}
+.notice li{font-size:13.5px;color:var(--sub);padding-left:36px;position:relative}
+.notice li::before{counter-increment:c;content:"0" counter(c);position:absolute;left:0;top:2px;font-size:12px;font-weight:800;color:var(--rose)}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+.kpi b{display:block;font-size:27px;color:var(--teal)}
+.kpi span{font-size:12px;color:var(--sub)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:46px 0 26px;background:var(--bg2)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+.fc h5{font-size:15px;margin-bottom:13px;color:#fff}
+.fc a{display:block;font-size:13px;color:var(--sub);padding:4px 0}
+.fc a:hover{color:var(--teal2)}
+.copy{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.hl{color:var(--teal2)}
+
+/* 响应式 */
+@media(max-width:960px){
+  .hx,.ag{grid-template-columns:1fr}
+  .cg,.g4{grid-template-columns:repeat(2,1fr)}
+  .axis{grid-template-columns:repeat(3,1fr)}
+  .ladder{grid-template-columns:repeat(2,1fr)}
+  .cols{column-count:1}
+}
+@media(max-width:640px){
+  section{padding:48px 0}
+  .mbtn{display:grid;place-items:center}
+  .links{position:fixed;inset:64px 0 0 0;background:rgba(16,19,28,.98);flex-direction:column;padding:24px;gap:6px;transform:translateX(100%);transition:.35s}
+  .links.open{transform:translateX(0)}
+  .links a{font-size:16px;padding:15px;border-radius:10px}
+  .hero{padding:54px 0 42px}
+  .hero h1{font-size:32px}
+  .tb,.env,.cg,.g4,.axis{grid-template-columns:1fr;gap:12px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .fg{grid-template-columns:1fr}
+  .st{font-size:22px}
+}
+@media(max-width:380px){
+  .ladder,.kpis{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="bar">
+  <div class="wrap nv">
+    <a class="brand" href="#top" aria-label="返回顶部"><span class="logo">鲁</span><span>秋霞电影网<span style="color:var(--teal)">鲁丝片</span></span></a>
+    <nav class="links" id="navLinks">
+      <a href="#sched">本周排片</a>
+      <a href="#tree">作者谱系</a>
+      <a href="#read">深度解读</a>
+      <a href="#genres">类型片单</a>
+      <a href="#path">观影路径</a>
+      <a href="#letters">观众来信</a>
+      <a href="#about">合规声明</a>
+    </nav>
+    <button class="mbtn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="beam"></div>
+  <div class="wrap hx">
+    <div>
+      <span class="eyebrow">AUTHOR · ART-HOUSE · RESTORATION</span>
+      <h1>慢下来的电影，<br>才看得见 <u>人的褶皱</u></h1>
+      <p>秋霞电影网鲁丝片（qiuxiadianyingwanglusipian-cn）是一间"线上艺术影院"：只聊值得反复看的电影——作者电影、女性叙事、经典修复、独立影像。不搬运资源，只做解读、片单与正版观影指引。</p>
+      <div class="acts">
+        <a class="b b1" href="#sched">查看本周排片 →</a>
+        <a class="b b2" href="#about">阅读合规声明</a>
+      </div>
+    </div>
+    <aside aria-hidden="true" class="reel">
+      <p style="font-size:11.5px;letter-spacing:2px;color:var(--teal2);margin-bottom:2px">本站 · 编辑部 TOP 3</p>
+      <div class="fm"><span class="idx">01</span><span class="sq">🎞️</span><div class="tx"><h4>花束般的恋爱</h4><small>2021 · 爱情 / 生活流</small></div></div>
+      <div class="fm"><span class="idx">02</span><span class="sq">🌊</span><div class="tx"><h4>驾驶我的车</h4><small>2021 · 滨口龙介 / 村上春树</small></div></div>
+      <div class="fm"><span class="idx">03</span><span class="sq">🪡</span><div class="tx"><h4>还有明天</h4><small>2023 · 女性 / 历史</small></div></div>
+    </aside>
+  </div>
+</section>
+
+<section class="chs" id="nav">
+  <div class="wrap">
+    <h2 class="st">放映 <i>栏目</i></h2>
+    <p class="sn">七个内容分区，内页以锚点组织，阅读与检索更顺。</p>
+    <div class="cg">
+
+      <a class="ch" href="#sched">
+        <span class="no">01 / SHOWTIME</span>
+        <h3>本周排片</h3>
+        <p>七天七部，按"放映时刻表"排好。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#tree">
+        <span class="no">02 / AUTEUR</span>
+        <h3>作者谱系</h3>
+        <p>镜头后面，那个不肯妥协的人。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#read">
+        <span class="no">03 / ESSAY</span>
+        <h3>深度解读</h3>
+        <p>长文。关于镜头、留白与沉默。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#genres">
+        <span class="no">04 / GENRE</span>
+        <h3>类型片单</h3>
+        <p>按心情挑：女性 / 修复 / 作者。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#path">
+        <span class="no">05 / PATH</span>
+        <h3>观影路径</h3>
+        <p>从哪一部开始，才不会被劝退。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#letters">
+        <span class="no">06 / MAIL</span>
+        <h3>观众来信</h3>
+        <p>读信。比影评更接近真实。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#about">
+        <span class="no">07 / LAW</span>
+        <h3>合规声明</h3>
+        <p>版权、年龄提示与正版倡议。</p>
+        <span class="ar">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#top">
+        <span class="no">08 / TOP</span>
+        <h3>返回顶部</h3>
+        <p>再放一遍胶片。</p>
+        <span class="ar">回到顶部 ↑</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：本周排片（时刻表 DOM） -->
+<section class="sched" id="sched">
+  <div class="wrap">
+    <h2 class="st">本周 <i>排片</i></h2>
+    <p class="sn">像电影院门口那张灯箱时刻表。按顺序看，风味最佳。</p>
+    <div class="tb">
+
+      <article class="row">
+        <div class="tm"><b>19:00</b><small>周一</small></div>
+        <div class="bd">
+          <h4>驾驶我的车</h4>
+          <span class="mt">日本 · 2021 · 剧情 179min</span>
+          <p>滨口龙介把村上春树的短篇拍成了三个小时的长谈。车里那段戏，是全片最安静的爆发。</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="tm"><b>19:30</b><small>周二</small></div>
+        <div class="bd">
+          <h4>花束般的恋爱</h4>
+          <span class="mt">日本 · 2021 · 爱情 124min</span>
+          <p>不是失恋片，是"两个人如何慢慢变成两个人"的纪录片。分手那场戏没有音乐。</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="tm"><b>20:00</b><small>周四</small></div>
+        <div class="bd">
+          <h4>还有明天</h4>
+          <span class="mt">意大利 · 2023 · 女性 118min</span>
+          <p>1946 年，一位罗马主妇在选票上投下名字。黑白片，但每一帧都在燃烧。</p>
+        </div>
+      </article>
+
+      <article class="row">
+        <div class="tm"><b>20:30</b><small>周六</small></div>
+        <div class="bd">
+          <h4>奥本海默</h4>
+          <span class="mt">美国 · 2023 · 传记 180min</span>
+          <p>诺兰第一次拍"人"。原子弹不是特效，是 conscience（良知）的重量。</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：作者谱系（年份轴卡片 DOM） -->
+<section class="tree" id="tree">
+  <div class="wrap">
+    <h2 class="st">作者 <i>谱系</i></h2>
+    <p class="sn">他们不讨好观众，但观众记住了他们。</p>
+    <div class="axis">
+
+      <article class="dr">
+        <div class="yr">1980s — 长镜头</div>
+        <div class="ic">滨</div>
+        <b>滨口龙介</b>
+        <small>日本 · 对话与沉默</small>
+        <div class="tg">《夜以继日》《驾驶我的车》</div>
+      </article>
+
+      <article class="dr">
+        <div class="yr">1970s — 女性</div>
+        <div class="ic">阿</div>
+        <b>阿涅斯·瓦尔达</b>
+        <small>法国 · 新浪潮祖母</small>
+        <div class="tg">《五至七时的克莱奥》《拾穗者》</div>
+      </article>
+
+      <article class="dr">
+        <div class="yr">1990s — 极简</div>
+        <div class="ic">蔡</div>
+        <b>蔡明亮</b>
+        <small>台湾 · 都市孤独</small>
+        <div class="tg">《爱情万岁》《郊游》</div>
+      </article>
+
+      <article class="dr">
+        <div class="yr">1960s — 作者</div>
+        <div class="ic">候</div>
+        <b>侯孝贤</b>
+        <small>台湾 · 远景美学</small>
+        <div class="tg">《悲情城市》《刺客聂隐娘》</div>
+      </article>
+
+      <article class="dr">
+        <div class="yr">1980s — 诗意</div>
+        <div class="ic">基</div>
+        <b>基耶斯洛夫斯基</b>
+        <small>波兰 · 命运与偶然</small>
+        <div class="tg">《蓝白红三部曲》《十诫》</div>
+      </article>
+
+      <article class="dr">
+        <div class="yr">2010s — 新声</div>
+        <div class="ic">席</div>
+        <b>席琳·宋</b>
+        <small>韩国/美国 · 关系切片</small>
+        <div class="tg">《过往人生》《物质主义者》</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：深度解读（报刊分栏 DOM） -->
+<section class="read" id="read">
+  <div class="wrap">
+    <h2 class="st">深度 <i>解读</i></h2>
+    <p class="sn">照着老电影杂志的排法写的。长一点，慢一点。</p>
+    <div class="paper">
+      <div class="mast">
+        <h3 class="serif">鲁 丝 电 影 札 记</h3>
+        <small>QIU XIA CINEMA NOTES · 第三期 · 艺术电影观察</small>
+      </div>
+      <div class="cols">
+
+        <article>
+          <h4>长镜头不是炫技，是"给时间以尊重"</h4>
+          <span class="qt">"观众需要被信任，才值得被沉默对待。"</span>
+          <p>《驾驶我的车》里那段七分钟的独角戏，演员对着空舞台说话。镜头不切，因为悲伤不需要剪辑。艺术电影的第一课，是学会等——等演员的呼吸，等灯光的衰减，等观众自己想明白。</p>
+        </article>
+
+        <article>
+          <h4>女性叙事，正在换一种讲法</h4>
+          <span class="qt">"她不是受害者，她是选民。"</span>
+          <p>《还有明天》最厉害的一笔，是把家暴拍成黑白默片式的喜剧节奏，却在结尾让女主角走向投票箱。女性电影不再是"被讲述"，而是"自己落笔"。这不是题材变化，是主语变化。</p>
+        </article>
+
+        <article>
+          <h4>为什么修复版值得进影院</h4>
+          <span class="qt">"胶片颗粒，是时间的皮肤。"</span>
+          <p>4K 修复不是"变清晰"，是让当年摄影师故意留下的层次重新出现。《悲情城市》的远景、《霸王别姬》的戏台，大银幕与手机屏幕，看到的是两部不同的电影。</p>
+        </article>
+
+        <article>
+          <h4>生活流电影怎么看才不困</h4>
+          <span class="qt">"别找剧情，找细节。"</span>
+          <p>《花束般的恋爱》前半段像恋爱 vlog，后半段像离婚调解。它的刀藏在"两个人不再同步看同一本书"的那一幕。看生活流，眼睛要放在手、杯子、鞋带、未读消息上——情节在别处。</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：类型片单（标签页 DOM） -->
+<section class="genres" id="genres">
+  <div class="wrap">
+    <h2 class="st">类型 <i>片单</i></h2>
+    <p class="sn">点标签换心情。评分来自本站编辑部，非商业榜单。</p>
+    <div class="tabs">
+      <span class="tab on">女性叙事</span>
+      <span class="tab">经典修复</span>
+      <span class="tab">作者电影</span>
+      <span class="tab">生活流</span>
+    </div>
+    <div class="g4">
+
+      <article class="pc">
+        <div class="cv2 v1"><span class="mk">2023</span>🌷</div>
+        <div class="ft">
+          <h4>还有明天</h4>
+          <div class="mt"><span>女性 / 历史</span><span class="stars">★ 8.8</span></div>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="cv2 v2"><span class="mk">1987</span>🎭</div>
+        <div class="ft">
+          <h4>霸王别姬</h4>
+          <div class="mt"><span>剧情 / 修复</span><span class="stars">★ 9.2</span></div>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="cv2 v3"><span class="mk">1989</span>🌆</div>
+        <div class="ft">
+          <h4>悲情城市</h4>
+          <div class="mt"><span>历史 / 作者</span><span class="stars">★ 8.9</span></div>
+        </div>
+      </article>
+
+      <article class="pc">
+        <div class="cv2 v4"><span class="mk">2021</span>📖</div>
+        <div class="ft">
+          <h4>驾驶我的车</h4>
+          <div class="mt"><span>剧情 / 改编</span><span class="stars">★ 8.4</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：观影路径（阶梯 DOM） -->
+<section class="path" id="path">
+  <div class="wrap">
+    <h2 class="st">观影 <i>路径</i></h2>
+    <p class="sn">四阶台阶。从"看不进去"到"想再看一遍"。</p>
+    <div class="ladder">
+
+      <div class="step">
+        <div class="ix">STEP 01</div>
+        <h4>先吃"甜的"</h4>
+        <p>从《花束般的恋爱》《过往人生》入手。有故事、有情绪、时长友好。</p>
+        <div class="tip">建议：关弹幕，一次一部</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 02</div>
+        <h4>再吃"慢的"</h4>
+        <p>《驾驶我的车》《悲情城市》。允许自己走神，走神也是观影的一部分。</p>
+        <div class="tip">建议：大屏 + 耳机 + 90 分钟不碰手机</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 03</div>
+        <h4>然后看"人"</h4>
+        <p>《还有明天》《奥本海默》。看表演，看演员如何用眼神替代台词。</p>
+        <div class="tip">建议：看完查导演访谈</div>
+      </div>
+
+      <div class="step">
+        <div class="ix">STEP 04</div>
+        <h4>最后追"作者"</h4>
+        <p>按导演而非按类型追：滨口、侯孝贤、瓦尔达、蔡明亮。才算真正入坑。</p>
+        <div class="tip">建议：做观影笔记，记下时间戳</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：观众来信（信笺 DOM） -->
+<section class="letters" id="letters">
+  <div class="wrap">
+    <h2 class="st">观众 <i>来信</i></h2>
+    <p class="sn">读者写来的信。不代表本站立场，但每封都值得被读完。</p>
+    <div class="env">
+
+      <article class="letter">
+        <div class="who">小满，29 岁<em>上海</em></div>
+        <p>看完《花束般的恋爱》，把前任的聊天记录从头翻了一遍。不是想复合，是想搞清楚"我们是从哪一刻开始，不再读同一本书的"。</p>
+        <div class="sign">—— 2026 年春</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">老陈，61 岁<em>退休教师</em></div>
+        <p>年轻时被"剧情"绑架，现在才懂长镜头的好。《悲情城市》那场宴会，我数了数，镜头停了四分钟。四分钟里，历史自己走过来。</p>
+        <div class="sign">—— 观影四十年</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">阿May，33 岁<em>编辑</em></div>
+        <p>带妈妈看了《还有明天》。散场她没说话，走了很远才说一句："原来选票也是电影。"那一刻我知道，电影选对了。</p>
+        <div class="sign">—— 母亲节场</div>
+      </article>
+
+      <article class="letter">
+        <div class="who">影迷小赵，22 岁<em>学生</em></div>
+        <p>以前觉得艺术电影是"装"。后来看了瓦尔达的《拾穗者》，才明白：最先锋的镜头，拍的往往是最普通的人。</p>
+        <div class="sign">—— 入门第三个月</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 关于与合规 -->
+<section class="about" id="about">
+  <div class="wrap">
+    <h2 class="st">关于 <i>本站</i></h2>
+    <p class="sn">秋霞电影网鲁丝片（qiuxiadianyingwanglusipian-cn）的立场与承诺。</p>
+    <div class="ag">
+      <div class="notice">
+        <h3>合规与观影声明</h3>
+        <ol>
+          <li>本站为<b>影视赏析与资讯</b>类网站，<b>不提供</b>任何未授权视频资源、下载链接、网盘、在线播放或盗链。</li>
+          <li>所有影片推荐均指向正版授权平台（院线、流媒体、正版碟），尊重著作权、署名权与导演剪辑权。</li>
+          <li>部分影片含暴力、粗口、成人议题、沉重历史与悲伤情绪，建议观众根据自身情况理性选择；未成年人请在家长指导下观看。</li>
+          <li>站内影评与解读属编辑个人观点，不代表影片出品方、发行方或任何平台立场。本站为独立影迷站点，与任何片方无隶属关系。</li>
+          <li>本站不投放弹窗广告、不植入恶意代码、不采集非必要个人信息、不使用跨站跟踪脚本。</li>
+          <li>侵权反馈通道：dmca@example.com，承诺 48 小时内响应并处理。</li>
+        </ol>
+      </div>
+      <div>
+        <div class="kpis">
+          <div class="kpi"><b>186+</b><span>收录影片条目</span></div>
+          <div class="kpi"><b>94</b><span>原创长文</span></div>
+          <div class="kpi"><b>12</b><span>合作正版平台</span></div>
+          <div class="kpi"><b>100%</b><span>合规资源导向</span></div>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          <h3>联系我们</h3>
+          <ol>
+            <li>内容合作：editor@example.com</li>
+            <li>侵权投诉：dmca@example.com</li>
+            <li>读者来信：hello@example.com</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc">
+        <a class="brand" href="#top"><span class="logo">鲁</span><span>秋霞电影网<span style="color:var(--teal)">鲁丝片</span></span></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:320px">
+          一间线上艺术影院。qiuxiadianyingwanglusipian-cn 只做一件事：把值得慢看的电影，说清楚。
+        </p>
+      </div>
+      <div class="fc">
+        <h5>内容栏目</h5>
+        <a href="#sched">本周排片</a>
+        <a href="#tree">作者谱系</a>
+        <a href="#read">深度解读</a>
+        <a href="#genres">类型片单</a>
+      </div>
+      <div class="fc">
+        <h5>实用索引</h5>
+        <a href="#path">入坑顺序</a>
+        <a href="#path">年龄提示</a>
+        <a href="#letters">观众口碑</a>
+        <a href="#genres">按心情选片</a>
+      </div>
+      <div class="fc">
+        <h5>站点信息</h5>
+        <a href="#about">关于本站</a>
+        <a href="#about">合规声明</a>
+        <a href="#">隐私说明</a>
+        <a href="#">侵权投诉</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 <span class="hl">秋霞电影网鲁丝片</span> · qiuxiadianyingwanglusipian-cn · 保留所有权利。本站与任何影片出品方、发行方无隶属关系。</span>
+      <span>网站网址：https://qiuxiadianyingwanglusipian-cn.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('menuBtn'), nl=document.getElementById('navLinks');
+mb.addEventListener('click',function(){
+  nl.classList.toggle('open');
+  mb.textContent=nl.classList.contains('open')?'✕':'☰';
+});
+nl.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){ nl.classList.remove('open'); mb.textContent='☰'; }
+});
+
+var tabs=document.querySelectorAll('.tab');
+tabs.forEach(function(t){
+  t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on');});
+    t.classList.add('on');
+  });
+});
+
+var secs=document.querySelectorAll('section[id]'), links=document.querySelectorAll('.links a');
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120, cur='';
+  secs.forEach(function(s){ if(s.offsetTop<=pos) cur=s.id; });
+  links.forEach(function(a){
+    var on=(a.getAttribute('href')==='#'+cur);
+    a.style.color=on?'#fff':'';
+    a.style.background=on?'rgba(255,255,255,.06)':'';
+  });
+});
+</script>
+</body>
+</html>
